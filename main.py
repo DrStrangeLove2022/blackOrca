@@ -5,8 +5,8 @@ import sys
 from arcgis.gis import GIS
 
 #from t_users import commands as group1
-#from group2 import commands as group2
-#from group3 import commands as group3
+#from version import commands as version
+#from account_check import commands as account_check
 #from group4 import commands as group4
 #from group5 import commands as group5
 #from group6 import commands as group6
@@ -34,8 +34,8 @@ def startUp(url, username, password):
 if __name__ == "__main__":
     try:
     #entry_point.add_command(group1.total_count, name='Total Count')
-    #entry_point.add_command(group2.version)
-    #entry_point.add_command(group3.account_checker, name='Account Checker')
+    #entry_point.add_command(version.version)
+    #entry_point.add_command(account_check.account_checker, name='Account Checker')
         entry_point()
     except Exception as X:
         click.echo(X)
